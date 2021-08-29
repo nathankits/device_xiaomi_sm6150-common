@@ -195,6 +195,9 @@ TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 # Recovery
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_AB.qcom
+else ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS),false)
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_SAR.qcom
+BOARD_INCLUDE_RECOVERY_DTBO := true
 else
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 BOARD_INCLUDE_RECOVERY_DTBO := true
