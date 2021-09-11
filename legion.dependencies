@@ -1,0 +1,11 @@
+[
+ {
+   "repository"  : "android_hardware_xiaomi",
+   "target_path" : "hardware/xiaomi"
+ },
+ {
+   "repository"  : "TyraLizQ10/vendor_xiaomi_sm6150-common",
+   "target_path" : "vendor/xiaomi/sm6150-common",
+   "remote"      : "gitlab"
+ }
+]
