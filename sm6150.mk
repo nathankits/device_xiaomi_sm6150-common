@@ -26,6 +26,9 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
+# ANXCamera
+$(call inherit-product, vendor/xiaomi/ANXCamera/config.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.common@2.0-util \
